@@ -1,16 +1,15 @@
+import { useState } from "react";
 import "./App.css";
-import Form from "./Components/Form/Form";
-import ListTasks from "./Components/List/List";
-import { Container } from "@material-ui/core";
+import AddItem from "./Components/AddItem/AddItem";
+import ItemsList from "./Components/ItemsList/ItemsList";
 
 function App() {
+  const [edited, setEdited] = useState(false)
   return (
-    <Container>
-      <div className='app'>
-        <Form />
-        <ListTasks />
-      </div>
-    </Container>
+    <div className="app">
+      <AddItem edited />
+      <ItemsList setEdited />
+    </div>
   );
 }
 

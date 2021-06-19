@@ -1,0 +1,18 @@
+.list {
+  margin-top: 25px;
+
+  .item {
+    &:nth-of-type(n + 2) {
+      margin-top: 15px;
+    }
+
+    span {
+      margin-left: 5px;
+    }
+
+    button {
+      cursor: pointer;
+      margin-left: 15px;
+    }
+  }
+}
