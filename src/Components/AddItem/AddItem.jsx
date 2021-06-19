@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import './AddItem.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { addItem, changeItemField, saveEditedItem, changeEditedId } from '../../actions/actionCreators';

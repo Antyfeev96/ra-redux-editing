@@ -1,12 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import './ItemsList.scss';
 import { useSelector, useDispatch } from'react-redux'
 import { removeItem, editItem, changeEditedId } from '../../actions/actionCreators';
 
 export default function ItemsList() {
   const items = useSelector(state => state.itemList);
-  const item = useSelector(state => state.itemAdd);
   const dispatch = useDispatch();
 
   const handleEdit = (name, price, id) => {
