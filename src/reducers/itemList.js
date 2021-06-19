@@ -15,9 +15,8 @@ export default function itemListReducer(state = initialState, action) {
       const { id } = action.payload;
       return state.filter((item) => item.id !== id);
     case SAVE_EDITED_ITEM:
-      console.log(action.payload);
       const editedName = action.payload.name;
-      const editedPrice = action.payload.price;
+      const editedPrice = action.payload.value;
       const editedId = action.payload.editedId;
       state = state.map(item => {
         if (item.id === editedId) {
